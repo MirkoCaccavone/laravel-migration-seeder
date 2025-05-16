@@ -59,3 +59,23 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+1 creiamo il progetto con laravel 
+    composer create-project --prefer-dist laravel/laravel laravel-migration-seeder
+
+2 cambiamo il file .env
+
+3 creiamo la migration per la tabella trains
+    php artisan make:migration create_trains_table
+
+4 eseguiamo la migration 
+    php artisan migrate
+
+5 creiamo il model
+    php artisan make:model Train
+
+6 creiamo il controller 
+    php artisan make:controller TrainController
+
+7

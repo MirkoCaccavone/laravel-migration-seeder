@@ -20,6 +20,7 @@ return new class extends Migration
             $table->time('orario_arrivo');
             $table->date('data_partenza');
             $table->string('codice_treno');
+            // a differenza di TinyInteger che va da -128 a 127, unsignedTinyInteger va da 0 a 255 (senza segno)
             $table->unsignedTinyInteger('numero_carrozze');
             $table->boolean('in_orario')->default(true);
             $table->boolean('cancellato')->default(false);
